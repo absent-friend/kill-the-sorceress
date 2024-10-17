@@ -1,16 +1,15 @@
-import { Counter } from "./Counter.js";
+import { Figure } from "../../components/Figure.jsx";
+import { FigureSet } from "../../components/FigureSet.jsx";
+import { Paragraph } from "../../components/Paragraph.jsx";
 
 export default function Page() {
   return (
-    <>
-      <h1 class="font-bold text-3xl pb-4">My Vike app</h1>
-      This page is:
-      <ul>
-        <li>Rendered to HTML.</li>
-        <li>
-          Interactive. <Counter />
-        </li>
-      </ul>
-    </>
+    <Paragraph>
+      Here's something really cool.
+      <FigureSet>
+        <Figure image="https://i.imgur.com/Qy1g15J.png" caption="Test image" />
+        <Figure video="https://www.youtube.com/embed/FIml6Xe548E" caption="Test video" />
+      </FigureSet>
+    </Paragraph>
   );
 }
