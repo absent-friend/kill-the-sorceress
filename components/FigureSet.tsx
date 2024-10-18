@@ -1,4 +1,4 @@
-import { children, createSignal, For, ParentProps, Show } from "solid-js";
+import { children, createSignal, For, ParentProps } from "solid-js";
 import { useChapterContext } from "./ChapterContext";
 
 export function FigureSet(props: ParentProps) {
@@ -6,29 +6,37 @@ export function FigureSet(props: ParentProps) {
   const [activeFigure, setActiveFigure] = createSignal(0);
   const {chapter, getFigureNumber} = useChapterContext();
   return (
-    <Show when={resolved.length > 0}>
-      <span>
-        <span>
-          <For each={resolved}>
-            {(child, index) => (
-              <span class={activeFigure() !== index() ? "hidden" : undefined}>
-                {child}
-              </span>
-            )}
-          </For>
-        </span>
-        <Show when={resolved.length > 1}>
-          <span>
-            <For each={resolved}>
-              {(_, index) => (
-                <button onclick={() => setActiveFigure(index())}>
-                  Figure {chapter}.{getFigureNumber()}
-                </button>
-              )}
-            </For>
-          </span>
-        </Show>
+    <span class="ms-auto ps-2 shrink-0">
+      <span class="inline-block text-center w-[640px]">
+        <For each={resolved}>
+          {(child, index) => (
+            <span classList={{ 'hidden': activeFigure() !== index(), }}>
+              {child}
+            </span>
+          )}
+        </For>
       </span>
-    </Show>
+      <span class="flex justify-center">
+        <For each={resolved}>
+          {(_, index) => (
+            <button 
+              onclick={() => setActiveFigure(index())} 
+              classList={{ 
+                'border-2': true, 
+                'border-solid': true, 
+                'border-black': true, 
+                'px-2': true,
+                'py-1': true,
+                'rounded-s': index() === 0, 
+                'rounded-e': index() === resolved.length - 1, 
+                'border-s': index() !== 0, 
+                'border-e': index() !== resolved.length - 1 }}
+            >
+              Figure {chapter}.{getFigureNumber()}
+            </button>
+          )}
+        </For>
+      </span>
+    </span>
   );
 }
