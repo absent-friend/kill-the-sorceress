@@ -2,16 +2,11 @@ import vikeSolid from "vike-solid/config";
 import type { Config } from "vike/types";
 import Layout from "../layouts/LayoutDefault.js";
 
-// Default config (can be overridden by pages)
-// https://vike.dev/config
-
 export default {
-  // https://vike.dev/Layout
   Layout,
 
-  // https://vike.dev/head-tags
-  title: "My Vike App",
-  description: "Demo showcasing Vike",
+  title: "Kill the Sorceress!",
+  description: "A comprehensive guide to advanced speedrun strategies for the first Sorceress fight in Spyro: Year of the Dragon.",
 
   extends: vikeSolid,
 } satisfies Config;

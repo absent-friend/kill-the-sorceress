@@ -1,27 +1,24 @@
 import { ParentProps } from "solid-js";
-import { ChapterContextProvider } from "./ChapterContext";
+import Link from "./Link";
 
 interface ChapterProps extends ParentProps {
   title: string,
-  number: number,
   previous?: string,
   next?: string
 }
 
 export function Chapter(props: ChapterProps) {
   return (
-    <ChapterContextProvider chapter={props.number}>
-      <div class="grid grid-rows-[1fr_auto] h-full overflow-auto">
-        <div class="m-4">
-          <h1>{props.title}</h1>
-          {props.children}
-        </div>
-        <nav aria-labelledby="chapter-nav-label" class="flex p-4">
-          <a href={'../' + props.previous + '.html'} classList={{ invisible: !props.previous }}>← Previous</a>
-          <span id="chapter-nav-label" class="mx-auto">Chapter Navigation</span>
-          <a href={'../' + props.next + '.html'} classList={{ invisible: !props.next }}>Next →</a>
-        </nav>
+    <div class="grid grid-rows-[1fr_auto] h-full">
+      <div class="p-4">
+        <h1 class="font-bold text-2xl">{props.title}</h1>
+        {props.children}
       </div>
-    </ChapterContextProvider>
+      <nav aria-labelledby="chapter-nav-label" class="border-t-2 grid grid-cols-[1fr_2fr_1fr] p-4">
+        <Link href={props.previous || ''} invisible={!props.previous}>← Previous</Link>
+        <span id="chapter-nav-label" class="text-center">Chapter Navigation</span>
+        <Link href={props.next || ''} class="text-end" invisible={!props.next}>Next →</Link>
+      </nav>
+    </div>
   )
 }

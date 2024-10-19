@@ -1,38 +1,33 @@
 import { children, createSignal, For, ParentProps } from "solid-js";
-import { useChapterContext } from "./ChapterContext";
 
 export function FigureSet(props: ParentProps) {
   const resolved = children(() => props.children).toArray();
   const [activeFigure, setActiveFigure] = createSignal(0);
-  const {chapter, getFigureNumber} = useChapterContext();
   return (
-    <span class="ms-auto ps-2 shrink-0">
-      <span class="inline-block text-center w-[640px]">
-        <For each={resolved}>
-          {(child, index) => (
-            <span classList={{ 'hidden': activeFigure() !== index(), }}>
-              {child}
-            </span>
-          )}
-        </For>
-      </span>
+    <span>
+      <For each={resolved}>
+        {(child, index) => (
+          <span classList={{ 'hidden': activeFigure() !== index(), }}>
+            {child}
+          </span>
+        )}
+      </For>
       <span class="flex justify-center">
         <For each={resolved}>
           {(_, index) => (
-            <button 
-              onclick={() => setActiveFigure(index())} 
-              classList={{ 
-                'border-2': true, 
-                'border-solid': true, 
-                'border-black': true, 
-                'px-2': true,
-                'py-1': true,
-                'rounded-s': index() === 0, 
-                'rounded-e': index() === resolved.length - 1, 
-                'border-s': index() !== 0, 
-                'border-e': index() !== resolved.length - 1 }}
-            >
-              Figure {chapter}.{getFigureNumber()}
+            <button onclick={() => setActiveFigure(index())} class="group">
+              <span classList={{
+                'block': true,
+                'h-0.5': true,
+                'w-8': true,
+                'my-4': true,
+                'group-hover:bg-slate-500': true,
+                'group-active:bg-slate-600': true,
+                'bg-slate-400': activeFigure() !== index(),
+                'bg-slate-500': activeFigure() === index(),
+                'ms-1': index() !== 0,
+                'me-1': index() !== resolved.length - 1 }}>
+              </span>
             </button>
           )}
         </For>
