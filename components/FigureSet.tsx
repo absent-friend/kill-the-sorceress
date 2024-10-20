@@ -1,18 +1,39 @@
 import { children, createSignal, For, ParentProps } from "solid-js";
 
-export function FigureSet(props: ParentProps) {
+export default function FigureSet(props: ParentProps) {
   const resolved = children(() => props.children).toArray();
   const [activeFigure, setActiveFigure] = createSignal(0);
+  function moveLeft() {
+    const current = activeFigure();
+    setActiveFigure(Math.max(current - 1, 0));
+  }
+  function moveRight() {
+    const current = activeFigure();
+    setActiveFigure(Math.min(current + 1, resolved.length - 1))
+  }
+
   return (
-    <span>
+    <div>
       <For each={resolved}>
         {(child, index) => (
-          <span classList={{ 'hidden': activeFigure() !== index(), }}>
+          <div classList={{ 'hidden': activeFigure() !== index(), }}>
             {child}
-          </span>
+          </div>
         )}
       </For>
-      <span class="flex justify-center">
+      <div class="flex justify-center mb-4">
+        <button onclick={moveLeft} class="group me-4">
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" 
+            class="stroke-slate-500 group-active:stroke-slate-600 size-6"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+          </svg>
+        </button>
         <For each={resolved}>
           {(_, index) => (
             <button onclick={() => setActiveFigure(index())} class="group">
@@ -20,7 +41,6 @@ export function FigureSet(props: ParentProps) {
                 'block': true,
                 'h-0.5': true,
                 'w-8': true,
-                'my-4': true,
                 'group-hover:bg-slate-500': true,
                 'group-active:bg-slate-600': true,
                 'bg-slate-400': activeFigure() !== index(),
@@ -31,7 +51,19 @@ export function FigureSet(props: ParentProps) {
             </button>
           )}
         </For>
-      </span>
-    </span>
+        <button onclick={moveRight} class="group ms-4">
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" 
+            class="stroke-slate-500 group-active:stroke-slate-600 size-6"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg>
+        </button>
+      </div>
+    </div>
   );
 }
