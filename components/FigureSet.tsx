@@ -29,7 +29,7 @@ export default function FigureSet(props: ParentProps) {
             viewBox="0 0 24 24" 
             stroke-width="1.5" 
             stroke="currentColor" 
-            class="stroke-slate-500 group-active:stroke-slate-600 size-6"
+            class="stroke-zinc-500 group-active:stroke-zinc-600 size-6"
           >
             <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
           </svg>
@@ -41,10 +41,10 @@ export default function FigureSet(props: ParentProps) {
                 'block': true,
                 'h-0.5': true,
                 'w-8': true,
-                'group-hover:bg-slate-500': true,
-                'group-active:bg-slate-600': true,
-                'bg-slate-400': activeFigure() !== index(),
-                'bg-slate-500': activeFigure() === index(),
+                'group-hover:bg-zinc-500': true,
+                'group-active:bg-zinc-600': true,
+                'bg-zinc-400': activeFigure() !== index(),
+                'bg-zinc-500': activeFigure() === index(),
                 'ms-1': index() !== 0,
                 'me-1': index() !== resolved.length - 1 }}>
               </span>
@@ -58,7 +58,7 @@ export default function FigureSet(props: ParentProps) {
             viewBox="0 0 24 24" 
             stroke-width="1.5" 
             stroke="currentColor" 
-            class="stroke-slate-500 group-active:stroke-slate-600 size-6"
+            class="stroke-zinc-500 group-active:stroke-zinc-600 size-6"
           >
             <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
           </svg>
