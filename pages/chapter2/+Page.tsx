@@ -7,7 +7,7 @@ import Section from "../../components/Section";
 
 export default function Page() {
   return (
-    <Chapter title="Chapter 2 - Vehicle I (Cannon I)" previous="/chapter1" next="/chapter3">
+    <Chapter title="Chapter 2 - Vehicle I (Cannon I)" previous="chapter1" next="chapter3">
       <Paragraph>
         Phase ending: 2 total damage.
       </Paragraph>
