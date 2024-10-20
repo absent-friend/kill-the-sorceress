@@ -1,68 +1,15 @@
-<!--bati:start section="document"-->
+# Kill the Sorceress!
 
-<!--bati:start section="intro"-->
+This is a web adaptation of Jeremy Thompson's advanced tutorial for the first Sorceress fight in Spyro: Year of the Dragon. [Check out the original document.](https://pastebin.com/Z8hncDwM)
 
-Generated with [Bati](https://batijs.dev) ([version 296](https://www.npmjs.com/package/create-bati/v/0.0.296)) using this command:
+The pastebin is a very valuable and well-written source of information, but it's a little unfriendly, since there are a number of supplementary images and videos that can't be 
+embedded in a plain text document. My aim with this project is to take advantage of modern web conveniences to present this tutorial in a more unified and accessible manner.
 
-```sh
-npm create bati -- --solid --tailwindcss --eslint
-```
+## Technical details
 
-<!--bati:start section="TOC"-->
+This project uses:
+* [Solid](https://www.solidjs.com/) as a component-building + reactivity framework.
+* [Tailwind](https://tailwindcss.com/) for styling.
+* [Vike](https://vike.dev/) with the [`vike-solid`](https://vike.dev/vike-solid) extension for routing and static site generation.
 
-## Contents
-
-* [`/pages/+config.ts`](#pagesconfigts)
-* [Routing](#routing)
-* [`/pages/_error/+Page.jsx`](#pages_errorpagejsx)
-* [`/pages/+onPageTransitionStart.ts` and `/pages/+onPageTransitionEnd.ts`](#pagesonpagetransitionstartts-and-pagesonpagetransitionendts)
-* [SSR](#ssr)
-* [HTML Streaming](#html-streaming)
-
-<!--bati:end section="TOC"-->
-
-<!--bati:end section="intro"-->
-
-<!--bati:start section="features"-->
-
-<!--bati:start category="UI Framework" flag="solid"-->
-
-This app is ready to start. It's powered by [Vike](https://vike.dev) and [SolidJS](https://www.solidjs.com/guides/getting-started).
-
-### `/pages/+config.ts`
-
-Such `+` files are [the interface](https://vike.dev/config) between Vike and your code. It defines:
-
-* A default [`<Layout>` component](https://vike.dev/Layout) (that wraps your [`<Page>` components](https://vike.dev/Page)).
-* A default [`title`](https://vike.dev/title).
-* Global [`<head>` tags](https://vike.dev/head-tags).
-
-### Routing
-
-[Vike's built-in router](https://vike.dev/routing) lets you choose between:
-
-* [Filesystem Routing](https://vike.dev/filesystem-routing) (the URL of a page is determined based on where its `+Page.jsx` file is located on the filesystem)
-* [Route Strings](https://vike.dev/route-string)
-* [Route Functions](https://vike.dev/route-function)
-
-### `/pages/_error/+Page.jsx`
-
-The [error page](https://vike.dev/error-page) which is rendered when errors occur.
-
-### `/pages/+onPageTransitionStart.ts` and `/pages/+onPageTransitionEnd.ts`
-
-The [`onPageTransitionStart()` hook](https://vike.dev/onPageTransitionStart), together with [`onPageTransitionEnd()`](https://vike.dev/onPageTransitionEnd), enables you to implement page transition animations.
-
-### SSR
-
-SSR is enabled by default. You can [disable it](https://vike.dev/ssr) for all your pages or only for some pages.
-
-### HTML Streaming
-
-You can enable/disable [HTML streaming](https://vike.dev/stream) for all your pages, or only for some pages while still using it for others.
-
-<!--bati:end category="UI Framework" flag="solid"-->
-
-<!--bati:end section="features"-->
-
-<!--bati:end section="document"-->
+Written in [TypeScript](https://www.typescriptlang.org/); scaffolded using [Bâti](https://batijs.dev/).
