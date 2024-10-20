@@ -4,10 +4,10 @@
 
 @layer base {
   h1 {
-    @apply font-bold text-3xl text-violet-900 dark:text-violet-300;
+    @apply font-bold text-3xl text-indigo-900 dark:text-violet-300;
   }
   h2 {
-    @apply font-bold text-2xl text-violet-900 dark:text-violet-300;
+    @apply font-bold text-2xl text-indigo-900 dark:text-violet-300;
   }
   h3 {
     @apply font-bold text-xl;
