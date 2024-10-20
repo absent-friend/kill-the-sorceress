@@ -3,7 +3,6 @@ import { ParentProps } from "solid-js";
 interface LinkProps extends ParentProps {
   href: string,
   invisible?: boolean
-  noColor?: boolean,
   noUnderline?: boolean,
   class?: string
 }
@@ -16,5 +15,5 @@ function normalize(url: string) {
 export default function Link(props: LinkProps) {
   const href = normalize(import.meta.env.BASE_URL + props.href);
   const extraClasses = Object.fromEntries((props.class || '').split(' ').map(clazz => [clazz, true]));
-  return <a href={href} classList={{ 'invisible': props.invisible, 'text-[revert]': !props.noColor, 'underline': !props.noUnderline, ...extraClasses }}>{props.children}</a>;
+  return <a href={href} classList={{ 'invisible': props.invisible, 'underline': !props.noUnderline, ...extraClasses }}>{props.children}</a>;
 }

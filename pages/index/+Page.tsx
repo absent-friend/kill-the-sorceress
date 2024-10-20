@@ -1,18 +1,13 @@
 import Chapter from "../../components/Chapter.jsx";
-import Figure from "../../components/Figure.jsx";
-import FigureSet from "../../components/FigureSet.jsx";
+import Link from "../../components/Link.jsx";
 import Paragraph from "../../components/Paragraph.jsx";
 
 export default function Page() {
   return (
-    <Chapter title="Test Chapter">
+    <Chapter title="WIP">
       <Paragraph>
-        Here's something really cool.
+        Demo: <Link href="/chapter2">Chapter 2</Link>
       </Paragraph>
-      <FigureSet>
-        <Figure imgur="Qy1g15J" caption="Test image" />
-        <Figure youtube="FIml6Xe548E" caption="Test video" />
-      </FigureSet>
     </Chapter>
   );
 }
