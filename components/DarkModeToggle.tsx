@@ -1,3 +1,17 @@
+export function DarkModeInit() {
+  const script = `
+  let theme = window.localStorage.getItem("theme");
+  if (theme === null) {
+    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    window.localStorage.setItem("theme", theme);
+  }
+  document.documentElement.classList.toggle("dark", theme === "dark");
+  `;
+  return (
+    <script lang="js" innerHTML={script}></script>
+  );
+}
+
 function changeTheme() {
   const theme = document.documentElement.classList.toggle("dark") ? "dark" : "light";
   window.localStorage.setItem("theme", theme);
