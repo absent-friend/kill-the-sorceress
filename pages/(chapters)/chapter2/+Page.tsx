@@ -36,7 +36,7 @@ export default function Page() {
         </Paragraph>
         <FigureSet>
           <Figure imgur="4x6LpjC" caption="Cannon C - Attack Strategy (Standard)"/>
-          <Figure youtube="HVOYrw0b8jQ" caption="Cannon C - Attack Strategy (Standard)"/>
+          <Figure youtube="HVOYrw0b8jQ" caption="Cannon C - Demonstration of Attack Strategy (Standard)"/>
         </FigureSet>
         <Paragraph>
           If the cannon boarded is <b>Cannon D</b>, then aim at the far edge of the arena, pivot the cannon in
@@ -45,7 +45,7 @@ export default function Page() {
         </Paragraph>
         <FigureSet>
           <Figure imgur="PUBI22t" caption="Cannon D - Attack Strategy (Standard)"/>
-          <Figure youtube="w-4jfDswUNY" caption="Cannon D - Attack Strategy (Standard)"/>
+          <Figure youtube="w-4jfDswUNY" caption="Cannon D - Demonstration of Attack Strategy (Standard)"/>
         </FigureSet>
         <Paragraph>
           If the cannon boarded is <b>Cannon E</b>, then aim between the center of the arena and the far edge 
@@ -55,7 +55,7 @@ export default function Page() {
         </Paragraph>
         <FigureSet>
           <Figure imgur="cvhzk8X" caption="Cannon E - Attack Strategy (Standard)"/>
-          <Figure youtube="Vr3QxKHZFMQ" caption="Cannon E - Attack Strategy (Standard)"/>
+          <Figure youtube="Vr3QxKHZFMQ" caption="Cannon E - Demonstration of Attack Strategy (Standard)"/>
         </FigureSet>
         <Note>
           When the Sorceress uses her rushing attack, she approximates the center coordinate during her 
@@ -82,7 +82,7 @@ export default function Page() {
         </Paragraph>
         <FigureSet>
           <Figure imgur="k8llVJN" caption="Cannon I - Attack Strategy (Rushed)" />
-          <Figure youtube="aLe7tpE7Udk" caption="Cannon I - Attack Strategy (Rushed)" />
+          <Figure youtube="aLe7tpE7Udk" caption="Cannon I - Demonstration of Attack Strategy (Rushed)" />
         </FigureSet>
       </Section>
       <Section title="End of Phase">
