@@ -7,7 +7,7 @@ import Section from "../../../components/Section";
 
 export default function Page() {
   return (
-    <Chapter title="Chapter I - Cannon Pattern Recognition & Interpretation" previous="prologue" next="chapter2">
+    <Chapter title="Chapter 1 - Cannon Patterns" previous="prologue" next="chapter2">
       <Paragraph>
         After completing the text interaction with Agent 9 at the beginning of the fight, cannons will
         begin to spawn randomly around the arena. There are five fixed drop points for these cannons - 

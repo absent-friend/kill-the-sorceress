@@ -25,19 +25,19 @@ export default function Section(props: SectionProps) {
       <Switch>
         <Match when={currentLevel === SectionLevel.FIRST}>
           {/* Starts with <h2> because <h1> is the chapter title. There should be only one <h1> in the document. */}
-          <h2 class="mt-4">{props.title}</h2>
+          <h2 class="mt-6">{props.title}</h2>
         </Match>
         <Match when={currentLevel === SectionLevel.SECOND}>
-          <h3 class="mt-4">{props.title}</h3>
+          <h3 class="mt-6">{props.title}</h3>
         </Match>
         <Match when={currentLevel === SectionLevel.THIRD}>
-          <h4 class="mt-4">{props.title}</h4>
+          <h4 class="mt-6">{props.title}</h4>
         </Match>
         <Match when={currentLevel === SectionLevel.FOURTH}>
-          <h5 class="mt-4">{props.title}</h5>
+          <h5 class="mt-6">{props.title}</h5>
         </Match>
         <Match when={currentLevel === SectionLevel.FIFTH}>
-          <h6 class="mt-4">{props.title}</h6>
+          <h6 class="mt-6">{props.title}</h6>
         </Match>
       </Switch>
       <SectionContext.Provider value={nextLevel(currentLevel)}>

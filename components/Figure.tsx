@@ -8,7 +8,7 @@ interface FigureProps {
 
 export default function Figure(props: FigureProps) {
   return (
-    <figure class="flex flex-col my-4 w-full">
+    <figure class="flex flex-col my-2 w-full">
       <Switch>
         <Match when={props.imgur}>
           <img src={`https://i.imgur.com/${props.imgur}.png`} class="self-center max-h-[360px]" />

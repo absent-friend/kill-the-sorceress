@@ -11,6 +11,7 @@ export default function Page() {
       <ul class="list-disc ms-8 my-2">
         <li><Link href="chapter1">Chapter 1</Link></li>
         <li><Link href="chapter2">Chapter 2</Link></li>
+        <li><Link href="chapter4">Chapter 4</Link></li>
       </ul>
     </Chapter>
   );

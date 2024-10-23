@@ -2,5 +2,5 @@ import { Config } from "vike/types";
 import defaultConfig from "../../+config";
 
 export default {
-  title: 'Chapter 1 - ' + defaultConfig.title,
+  title: 'Chapter 4 - ' + defaultConfig.title,
 } satisfies Config;

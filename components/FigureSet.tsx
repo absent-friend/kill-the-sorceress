@@ -21,7 +21,7 @@ export default function FigureSet(props: ParentProps) {
           </div>
         )}
       </For>
-      <div class="flex justify-center mb-4">
+      <div class="flex justify-center mb-2">
         <button onclick={moveLeft} class="group me-4">
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
