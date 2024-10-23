@@ -1,9 +1,9 @@
-import Chapter from "../../components/Chapter";
-import Figure from "../../components/Figure";
-import FigureSet from "../../components/FigureSet";
-import Note from "../../components/Note";
-import Paragraph from "../../components/Paragraph";
-import Section from "../../components/Section";
+import Chapter from "../../../components/Chapter";
+import Figure from "../../../components/Figure";
+import FigureSet from "../../../components/FigureSet";
+import Note from "../../../components/Note";
+import Paragraph from "../../../components/Paragraph";
+import Section from "../../../components/Section";
 
 export default function Page() {
   return (
@@ -29,7 +29,7 @@ export default function Page() {
       </Paragraph>
       <Section title="Standard Attack Strategies">
         <Paragraph>
-          If the cannon boarded is Cannon C, then aim between the center of the arena and the far edge
+          If the cannon boarded is <b>Cannon C</b>, then aim between the center of the arena and the far edge
           of the arena without adjusting the pivoting angle of the cannon and begin shooting. As the
           first damage is given, gradually lead the Sorceress left and continue shooting until the end
           of the phase.
@@ -39,8 +39,8 @@ export default function Page() {
           <Figure youtube="HVOYrw0b8jQ" caption="Cannon C - Attack Strategy (Standard)"/>
         </FigureSet>
         <Paragraph>
-          If the cannon boarded is Cannon D, then aim at the far edge of the arena, pivot the cannon in
-          the direction of the Sorceress's natural stopping point for Cannon D, and begin shooting. 
+          If the cannon boarded is <b>Cannon D</b>, then aim at the far edge of the arena, pivot the cannon in
+          the direction of the Sorceress's natural stopping point for <b>Cannon D</b>, and begin shooting. 
           Continue shooting until the end of the phase.
         </Paragraph>
         <FigureSet>
@@ -48,7 +48,7 @@ export default function Page() {
           <Figure youtube="w-4jfDswUNY" caption="Cannon D - Attack Strategy (Standard)"/>
         </FigureSet>
         <Paragraph>
-          If the cannon boarded is Cannon E, then aim between the center of the arena and the far edge 
+          If the cannon boarded is <b>Cannon E</b>, then aim between the center of the arena and the far edge 
           of the arena without adjusting the pivoting angle of the cannon and begin shooting. As the 
           first damage is given, gradually lead the Sorceress forward (and then left) and continue 
           shooting until the end of the phase.
@@ -60,7 +60,7 @@ export default function Page() {
         <Note>
           When the Sorceress uses her rushing attack, she approximates the center coordinate during her 
           return. Generally, this won't significantly alter her natural fleeing path; but it can, 
-          particularly with Cannon E. In these cases, it is sometimes necessary to alter the base aiming
+          particularly with <b>Cannon E</b>. In these cases, it is sometimes necessary to alter the base aiming
           strategies by adapting to the altered fleeing path.
           <Figure youtube="BgmP0QIhDrQ" caption="Cannon E - Fleeing Path (Altered)"/>
         </Note>

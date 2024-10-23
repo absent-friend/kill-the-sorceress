@@ -17,7 +17,7 @@ export default function Figure(props: FigureProps) {
           <iframe src={`https://www.youtube.com/embed/${props.youtube}`} class="self-center w-full max-w-[640px] max-h-[360px] aspect-square sm:aspect-video sm:h-auto" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </Match>
       </Switch>
-      <figcaption class="text-center">{props.caption}</figcaption>
+      <figcaption class="font-bold text-center text-sm">{props.caption}</figcaption>
     </figure>
   )
 }

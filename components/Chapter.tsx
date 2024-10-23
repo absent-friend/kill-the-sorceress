@@ -7,10 +7,14 @@ interface ChapterProps extends ParentProps {
   next?: string
 }
 
+export function scrollToChapterStart() {
+  return "document.getElementById('main-content').scrollTop = 0;";
+}
+
 export default function Chapter(props: ChapterProps) {
   return (
     <div class="grid grid-rows-[1fr_auto] h-full">
-      <main id="main-content" class="p-4">
+      <main id="main-content" class="overflow-auto p-4" style="scrollbar-width: thin;">
         <h1 class="font-bold text-3xl">{props.title}</h1>
         {props.children}
       </main>
