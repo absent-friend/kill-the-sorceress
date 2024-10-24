@@ -1,6 +1,6 @@
+import BulletList from "../../../components/BulletList";
 import Chapter from "../../../components/Chapter";
 import Figure from "../../../components/Figure";
-import Note from "../../../components/Note";
 import Paragraph from "../../../components/Paragraph";
 import Section from "../../../components/Section";
 
@@ -28,7 +28,7 @@ export default function Page() {
         The strategy used for this chapter depend on which kind of vehicle is dropped first 
         (Tank II or UFO I):
       </Paragraph>
-      <ul class="list-disc ms-8 my-2">
+      <BulletList>
         <li>
           In the case where the first vehicle dropped is Tank II, the strategies used are the same 
           as the ones described in the previous chapter. Reference the "Tank I drop" strategy 
@@ -38,7 +38,7 @@ export default function Page() {
           In the case where the first vehicle dropped is UFO I, the strategies used depend on the 
           degree of inadvertent hesitation created during the process of boarding the UFO.
         </li>
-      </ul>
+      </BulletList>
       <Section title="No Hesitation (Standard)">
         <Paragraph>
           If the process of boarding the UFO causes no hesitation, then continue forward for a 

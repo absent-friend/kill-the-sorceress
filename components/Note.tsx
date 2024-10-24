@@ -18,6 +18,7 @@ export default function Note(props: ParentProps) {
       "border-amber-300",
       "dark:border-amber-600",
       "px-2",
+      "pb-2",
       "rounded"
     ].join(' ')}>
       {props.children}

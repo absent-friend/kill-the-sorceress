@@ -1,3 +1,4 @@
+import BulletList from "../../../components/BulletList";
 import { CannonTable, CannonRow } from "../../../components/CannonTable";
 import Chapter from "../../../components/Chapter";
 import Figure from "../../../components/Figure";
@@ -49,12 +50,12 @@ export default function Page() {
         <Paragraph>
           Theoretical initial cannon drop probabilities:
         </Paragraph>
-        <ul class="list-disc ms-8 my-2">
+        <BulletList>
           <li><b>Cannon A</b> and <b>Cannon B</b> - <b>0%</b></li>
           <li><b>Cannon C</b> - <b>30%</b></li>
           <li><b>Cannon D</b> - <b>60%</b></li>
           <li><b>Cannon E</b> - <b>10%</b></li>
-        </ul>
+        </BulletList>
         <Paragraph>
           There are conditional statements composed from the data in Table 2 that collectively predict 
           the first cannon drop. They are listed below.
@@ -96,10 +97,10 @@ export default function Page() {
         <Paragraph>
           Theoretical Agent 9 movement probabilities:
         </Paragraph>
-        <ul class="list-disc ms-8 my-2">
+        <BulletList>
           <li>Left - <b>40%</b></li>
           <li>Right - <b>60%</b></li>
-        </ul>
+        </BulletList>
         <Paragraph>
           There are conditional statements composed from the data in Table 3 that collectively predict 
           the movement of Agent 9 after the first cannon drop. They are listed below.
