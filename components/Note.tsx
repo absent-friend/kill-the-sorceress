@@ -14,7 +14,7 @@ export default function Note(props: ParentProps) {
       "text-amber-950",
       "dark:text-amber-100",
       "border-solid",
-      "border-2",
+      "border-s-4",
       "border-amber-300",
       "dark:border-amber-600",
       "px-2",

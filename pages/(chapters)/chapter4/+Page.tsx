@@ -1,6 +1,7 @@
 import BulletList from "../../../components/BulletList";
 import Chapter from "../../../components/Chapter";
 import Figure from "../../../components/Figure";
+import Link from "../../../components/Link";
 import Paragraph from "../../../components/Paragraph";
 import Section from "../../../components/Section";
 
@@ -31,8 +32,8 @@ export default function Page() {
       <BulletList>
         <li>
           In the case where the first vehicle dropped is Tank II, the strategies used are the same 
-          as the ones described in the previous chapter. Reference the "Tank I drop" strategy 
-          summary for this section.
+          as the ones described in <Link href="chapter3">Chapter 3</Link>. Refer back to that for 
+          details.
         </li>
         <li>
           In the case where the first vehicle dropped is UFO I, the strategies used depend on the 

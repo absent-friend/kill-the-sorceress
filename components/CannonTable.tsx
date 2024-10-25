@@ -58,13 +58,13 @@ function buildRow(data: string, type: "header" | "body") {
     throw new Error(`Unmatched quote in column ${columns.length + 1}`);
 
   return (
-    <tr>
+    <tr class={`${type === 'header' ? 'bg-blue-200 dark:bg-blue-700' : 'odd:bg-blue-100 odd:dark:bg-blue-800 even:bg-blue-200 even:dark:bg-blue-700'}`}>
       <For each={columns}>
         {column => {
           const classList = {
-            'border-y': true,
-            'border-sky-300': true, 
-            'dark:border-sky-600': true,
+            'border-blue-300': true, 
+            'dark:border-blue-600': true,
+            'border-t': type === 'body',
             'border-s': column.leftBorder, 
             'border-e': column.rightBorder, 
           };
@@ -72,7 +72,7 @@ function buildRow(data: string, type: "header" | "body") {
           return (
             <Switch>
               <Match when={type === "header"}>
-                <th classList={classList}>{column.content.trim()}</th>
+                <th scope="col" classList={classList}>{column.content.trim()}</th>
               </Match>
               <Match when={type === "body"}>
                 <td classList={classList}>{column.content.trim()}</td>
@@ -104,12 +104,12 @@ interface CannonTableProps extends ParentProps {
 
 export function CannonTable(props: CannonTableProps) {
   return (
-    <table class="bg-sky-100 dark:bg-sky-800 border-2 border-sky-300 dark:border-sky-600 caption-bottom my-4 py-2 text-center w-full">
+    <table class="border-separate border-spacing-0 border-t-4 border-b border-blue-300 dark:border-blue-600 caption-bottom my-4 rounded-t text-center w-full">
       <caption class="font-bold text-sm">{props.caption}</caption>
-      <thead class="text-sky-950 dark:text-sky-100 text-lg">
+      <thead class="text-blue-950 dark:text-blue-100 text-lg">
         {headerRow(props.head)}
       </thead>
-      <tbody class="text-sky-950 dark:text-sky-100 text-lg">
+      <tbody class="text-blue-950 dark:text-blue-100 text-lg">
         {props.children}
       </tbody>
     </table>
