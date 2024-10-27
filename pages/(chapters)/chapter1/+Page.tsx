@@ -16,24 +16,12 @@ export default function Page() {
       </p>
       <Figure imgur="TI4qHUr" caption="Cannon Drop Points (Specific)" />
       <Section title="Finding the First Cannon">
-        <CannonTable head='"Pattern"|A B C D E|"Chance"' caption="Table 1: Initial Cannon Spawn Positions">
-          <CannonRow data='"1      "|x x x - -|"10%"'/>
-          <CannonRow data='"2      "|x x - x -|"10%"'/>
-          <CannonRow data='"3      "|x x - - x|"10%"'/>
-          <CannonRow data='"4      "|x - x x -|"10%"'/>
-          <CannonRow data='"5      "|x - x - x|"10%"'/>
-          <CannonRow data='"6      "|x - - x x|"10%"'/>
-          <CannonRow data='"7      "|- x x x -|"10%"'/>
-          <CannonRow data='"8      "|- x x - x|"10%"'/>
-          <CannonRow data='"9      "|- x - x x|"10%"'/>
-          <CannonRow data='"10     "|- - x x x|"10%"'/>
-        </CannonTable>
         <p>
           Identifying the cannon pattern is very useful in that it creates a certain amount of 
           predictability for the first cannon. Namely, the first cannon to drop may be predicted based
-          on which pattern is represented.
+          on which pattern is represented. All of the listed patterns are equally likely.
         </p>
-        <CannonTable head='"Pattern"|A B C D E|"  Drop  "' caption="Table 2: Initial Cannon Drop">
+        <CannonTable head='"Pattern"|A B C D E|"  Drop  "' caption="Table 1: Initial Cannon Drop">
           <CannonRow data='"1      "|x x o - -|"Cannon C"'/>
           <CannonRow data='"2      "|x x - o -|"Cannon D"'/>
           <CannonRow data='"3      "|x x - - o|"Cannon E"'/>
@@ -55,7 +43,7 @@ export default function Page() {
           <li><b>Cannon E</b> - <b>10%</b></li>
         </ul>
         <p>
-          There are conditional statements composed from the data in Table 2 that collectively predict 
+          There are conditional statements composed from the data in Table 1 that collectively predict 
           the first cannon drop. They are listed below.
         </p>
         <blockquote class="mx-8 my-2">
@@ -80,7 +68,7 @@ export default function Page() {
           After the first cannon has been dropped, the direction Agent 9 moves (left or right) is also 
           predictable based on which cannon spawn pattern is represented.
         </p>
-        <CannonTable head='"Pattern"|A B C D E|L R' caption="Table 3: Agent 9 Movement">
+        <CannonTable head='"Pattern"|A B C D E|L R' caption="Table 2: Agent 9 Movement">
           <CannonRow data='"1      "|x x x - -|- y'/>
           <CannonRow data='"2      "|x x - x -|- y'/>
           <CannonRow data='"3      "|x x - - x|y -'/>
@@ -100,7 +88,7 @@ export default function Page() {
           <li>Right - <b>60%</b></li>
         </ul>
         <p>
-          There are conditional statements composed from the data in Table 3 that collectively predict 
+          There are conditional statements composed from the data in Table 2 that collectively predict 
           the movement of Agent 9 after the first cannon drop. They are listed below.
         </p>
         <blockquote class="mx-8 my-2">
