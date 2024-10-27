@@ -109,6 +109,7 @@ export function CannonTable(props: CannonTableProps) {
       'border-spacing-0',
       'border-t-4',
       'border-b',
+      'border-x',
       'border-blue-300',
       'dark:border-blue-600',
       'caption-bottom',
