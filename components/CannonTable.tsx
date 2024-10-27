@@ -104,7 +104,19 @@ interface CannonTableProps extends ParentProps {
 
 export function CannonTable(props: CannonTableProps) {
   return (
-    <table class="border-separate border-spacing-0 border-t-4 border-b border-blue-300 dark:border-blue-600 caption-bottom my-4 rounded-t text-center w-full">
+    <table class={[
+      'border-separate',
+      'border-spacing-0',
+      'border-t-4',
+      'border-b',
+      'border-blue-300',
+      'dark:border-blue-600',
+      'caption-bottom',
+      'my-4',
+      'rounded-t',
+      'text-center',
+      'w-full'
+    ].join(' ')}>
       <caption class="font-bold text-sm">{props.caption}</caption>
       <thead class="text-blue-950 dark:text-blue-100 text-lg">
         {headerRow(props.head)}

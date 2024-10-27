@@ -21,4 +21,12 @@
   h6 {
     @apply italic leading-7;
   }
+
+  p {
+    @apply my-2;
+  }
+
+  ul {
+    @apply list-disc ms-8 my-2;
+  }
 }

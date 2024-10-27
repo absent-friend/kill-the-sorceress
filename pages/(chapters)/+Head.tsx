@@ -1,9 +1,9 @@
-import { scrollToChapterStart } from "../../components/Chapter";
+import { ScrollToChapterStart } from "../../components/Chapter";
 
 export default function HeadChapter() {
   return (
     <>
-      <script lang="js" innerHTML={scrollToChapterStart()}></script>
+      <ScrollToChapterStart/>
     </>
   )
 }

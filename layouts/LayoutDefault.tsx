@@ -13,7 +13,20 @@ export default function LayoutDefault(props: ParentProps) {
         </Link>
         <DarkModeToggle/>
       </header>
-      <div class="border-x-2 border-t-2 border-slate-400 dark:border-slate-700 bg-violet-200 text-slate-950 dark:bg-indigo-950 dark:text-slate-50 max-w-screen-md mx-auto overflow-auto w-full">
+      <div class={[
+        'border-x-2',
+        'border-t-2',
+        'border-slate-400',
+        'dark:border-slate-700',
+        'bg-violet-200',
+        'text-slate-950',
+        'dark:bg-indigo-950',
+        'dark:text-slate-50',
+        'max-w-screen-md',
+        'mx-auto',
+        'overflow-auto',
+        'w-full'
+      ].join(' ')}>
         {props.children}
       </div>
     </div>

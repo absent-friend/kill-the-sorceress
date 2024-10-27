@@ -7,8 +7,10 @@ interface ChapterProps extends ParentProps {
   next?: string
 }
 
-export function scrollToChapterStart() {
-  return "document.getElementById('main-content').scrollTop = 0;";
+export function ScrollToChapterStart() {
+  return (
+    <script lang="js">document.getElementById('main-content').scrollTop = 0;</script>
+  );
 }
 
 export default function Chapter(props: ChapterProps) {
