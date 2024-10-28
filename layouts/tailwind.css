@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Roboto Slab';
+  font-display: swap;
+  font-weight: bold;
+  src: url('../assets/fonts/roboto-slab/static/bold.ttf');
+}
+
 @layer base {
   h1 {
     @apply font-bold text-3xl text-indigo-900 dark:text-violet-300;
@@ -28,5 +35,11 @@
 
   ul {
     @apply list-disc ms-8 my-2;
+  }
+}
+
+@layer utilities {
+  .text-outline {
+    -webkit-text-stroke: 1.5px black;
   }
 }
