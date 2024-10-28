@@ -16,7 +16,7 @@ export default function Page() {
         spawned, but no additional tanks will spawn for the rest of the fight. A UFO cannot spawn 
         behind a drop point already occupied by one of the remaining tanks.
       </p>
-      <Figure imgur="dfgKwF7" caption="UFO Drop Points (General)"/>
+      <Figure imgur="dfgKwF7" caption="UFO Drop Points (General)" alt="A diagram depicting the drop locations of UFOs inside the arena. There are five such points, each located exactly in the middle of two cannon drop points and equally spaced from the adjacent UFO drop points."/>
       <p>
         Even though the second vehicle phase is over at this point, Agent 9 may drop another tank 
         before recognizing the end of the phase. Once it's clear which vehicle is going to be 
@@ -49,7 +49,7 @@ export default function Page() {
           conditions for another set of damaging shots. Repeat this process until the end of the 
           phase.
         </p>
-        <Figure youtube="oe0J102NQBE" caption="UFO I - Attack Strategy (Standard)"/>
+        <Figure youtube="oe0J102NQBE" caption="UFO I - Attack Strategy (Standard)" alt="A video demonstrating the standard attack strategy for UFOs. After the UFO is boarded, it is used to chase the Sorceress in a cyclical motion around the arena. Two shots are landed on the Sorceress per cycle — one from afar and one from up close."/>
       </Section>
       <Section title="Hesitation">
         <p>
@@ -60,7 +60,7 @@ export default function Page() {
           "no hesitation" strategy summary. Reference that strategy summary until the end of the 
           phase.
         </p>
-        <Figure youtube="b5FcWU9x6_E" caption="UFO I - Attack Strategy (Hesitation)"/>
+        <Figure youtube="b5FcWU9x6_E" caption="UFO I - Attack Strategy (Hesitation)" alt="A video demonstrating the hesistation strategy for UFOs. After the UFO is boarded, it is aimed towards the Sorceress in the center of the arena while she is stuck in place, and a single shot is landed. The standard strategy is used from that point onwards."/>
       </Section>
       <Section title="Stalling">
         <p>
@@ -69,7 +69,7 @@ export default function Page() {
           intersection of the Sorceress's path and the UFOs path. In these situations, stall the 
           UFO against the Sorceress for a moment to create more time.
         </p>
-        <Figure youtube="dKcDjekm7MY" caption="UFO I - Attack Strategy (Stall)"/>
+        <Figure youtube="dKcDjekm7MY" caption="UFO I - Attack Strategy (Stall)" alt="A video demonstrating the stalling technique with the UFO. A version of the standard strategy is shown, but after the first shot, the UFO is driven directly into the Sorceress and then down towards the floor until she is just about to do her close range attack, at which point another shot is fired."/>
         <p>
           Using only sharp turns increases the required precision for each set of damaging shots. 
           Widening sections of these turns creates lenience by increasing the distance between the 

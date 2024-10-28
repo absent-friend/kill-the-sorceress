@@ -20,6 +20,7 @@ export default function Chapter(props: ChapterProps) {
         <h1 class="font-bold text-3xl">{props.title}</h1>
         {props.children}
       </main>
+      <ScrollToChapterStart/>
       <nav aria-labelledby="chapter-nav-label" class="border-t border-slate-400 dark:border-slate-700 grid grid-cols-[1fr_2fr_1fr] p-4">
         <Link href={props.previous || ''} invisible={!props.previous}>← Previous</Link>
         <span id="chapter-nav-label" class="text-center">Chapter Navigation</span>

@@ -24,6 +24,7 @@ export default function FigureSet(props: ParentProps) {
       <div class="flex justify-center mb-2">
         <button onclick={moveLeft} class="group me-4">
           <svg 
+            aria-label="View previous figure"
             xmlns="http://www.w3.org/2000/svg" 
             fill="none" 
             viewBox="0 0 24 24" 
@@ -36,7 +37,7 @@ export default function FigureSet(props: ParentProps) {
         </button>
         <For each={resolved}>
           {(_, index) => (
-            <button onclick={() => setActiveFigure(index())} class="group">
+            <button onclick={() => setActiveFigure(index())} class="group" aria-label={`View figure ${index() + 1} of ${resolved.length}`}>
               <span classList={{
                 'block': true,
                 'h-0.5': true,
@@ -57,6 +58,7 @@ export default function FigureSet(props: ParentProps) {
         </For>
         <button onclick={moveRight} class="group ms-4">
           <svg 
+            aria-label="View next figure"
             xmlns="http://www.w3.org/2000/svg" 
             fill="none" 
             viewBox="0 0 24 24" 

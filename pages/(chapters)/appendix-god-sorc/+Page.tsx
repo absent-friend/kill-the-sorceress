@@ -37,7 +37,7 @@ export default function Page() {
           above. Assuming she is roughly centered in the arena, the first section of her fleeing 
           path is generally consistent regardless of the cannon boarded.
         </p>
-        <Figure youtube="qNl-abUITTU" caption="Cannon II - Fleeing Path (Natural)"/>
+        <Figure youtube="qNl-abUITTU" caption="Cannon II - Fleeing Path (Natural)" alt="A video demonstrating the Sorceress's natural pattern of movement when any cannon is boarded in the second phase and beyond. After cancelling her long range attack, she moves back and to the right towards the edge of the arena. It is similar to the beginning of Cannon D's movement pattern in the first phase, but she doesn't stop at the same point."/>
         <p>
           If the long range attack selected is the blue energy attack, then aim at the center of 
           the arena and begin shooting. As the first damage is given, gradually lead the Sorceress 
@@ -45,8 +45,8 @@ export default function Page() {
           shooting until the end of the phase.
         </p>
         <FigureSet>
-          <Figure imgur="Ysw37SR" caption="Cannon II - Attack Strategy (Blue Energy Attack Hesitation)"/>
-          <Figure youtube="IJxfZgeAAhI" caption="Cannon II - Demonstration of Attack Strategy (Blue Energy Attack Hesitation)"/>
+          <Figure imgur="Ysw37SR" caption="Cannon II - Attack Strategy (Blue Energy Attack Hesitation)" alt="A diagram depicting the locations of interest in the arena for blue energy attack hesitation strategy. The cannon's drop point, the Sorceress's initial position, and the ideal targets for the cannon shots are marked."/>
+          <Figure youtube="IJxfZgeAAhI" caption="Cannon II - Demonstration of Attack Strategy (Blue Energy Attack Hesitation)" alt="A video demonstrating the blue energy attack hesitation strategy. After the cannon is boarded, a shot is immediately fired at the center of the arena, and then additional shots are fired to the right and back, tracing the Sorceress's path towards the edge of the arena."/>
         </FigureSet>
         <Note>
           It is possible to finish these hits much more efficiently than in the examples, but it 

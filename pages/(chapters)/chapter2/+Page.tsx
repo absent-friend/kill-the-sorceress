@@ -16,9 +16,9 @@ export default function Page() {
         strategy used depends on which vehicle is boarded.
       </p>
       <FigureSet>
-        <Figure youtube="d-NI3fw-y5Q" caption="Cannon C - Fleeing Path (Natural)"/>
-        <Figure youtube="txn-RMgmFB8" caption="Cannon D - Fleeing Path (Natural)"/>
-        <Figure youtube="ADARi6WmAOk" caption="Cannon E - Fleeing Path (Natural)"/>
+        <Figure youtube="d-NI3fw-y5Q" caption="Cannon C - Fleeing Path (Natural)" alt="A video demonstrating the Sorceress's natural pattern of movement when Cannon C is boarded. She moves back and to the right towards the edge of the arena, turns left and runs in an arc towards a point left of the arena center and then to the left edge."/>
+        <Figure youtube="txn-RMgmFB8" caption="Cannon D - Fleeing Path (Natural)" alt="A video demonstrating the Sorceress's natural pattern of movement when Cannon D is boarded. She moves back and to the right towards the edge of the arena, stopping just to the right of center screen."/>
+        <Figure youtube="ADARi6WmAOk" caption="Cannon E - Fleeing Path (Natural)" alt="A video demonstrating the Sorceress's natural pattern of movement when Cannon E is boarded. She moves back and to the right towards the edge of the arena, turns left and runs in an arc towards the arena center and then to the left edge."/>
       </FigureSet>
       <p>
         At the moment the vehicle is boarded, both the Sorceress's coordinate position and her
@@ -34,8 +34,8 @@ export default function Page() {
           of the phase.
         </p>
         <FigureSet>
-          <Figure imgur="4x6LpjC" caption="Cannon C - Attack Strategy (Standard)"/>
-          <Figure youtube="HVOYrw0b8jQ" caption="Cannon C - Demonstration of Attack Strategy (Standard)"/>
+          <Figure imgur="4x6LpjC" caption="Cannon C - Attack Strategy (Standard)" alt="A diagram depicting the locations of interest in the arena for Cannon C's standard attack strategy. The cannon's drop point, the Sorceress's initial and final positions, and the ideal targets for the cannon shots are marked."/>
+          <Figure youtube="HVOYrw0b8jQ" caption="Cannon C - Demonstration of Attack Strategy (Standard)" alt="A video demonstrating the standard attack strategy for Cannon C. The cannon is aimed up and begins firing in its initial direction until the first shot connects, and then it is moved slightly to the left to land two more hits."/>
         </FigureSet>
         <p>
           If the cannon boarded is <b>Cannon D</b>, then aim at the far edge of the arena, pivot the cannon in
@@ -43,8 +43,8 @@ export default function Page() {
           Continue shooting until the end of the phase.
         </p>
         <FigureSet>
-          <Figure imgur="PUBI22t" caption="Cannon D - Attack Strategy (Standard)"/>
-          <Figure youtube="w-4jfDswUNY" caption="Cannon D - Demonstration of Attack Strategy (Standard)"/>
+          <Figure imgur="PUBI22t" caption="Cannon D - Attack Strategy (Standard)" alt="A diagram depicting the locations of interest in the arena for Cannon D's standard attack strategy. The cannon's drop point, the Sorceress's initial and final positions, and the ideal targets for the cannon shots are marked."/>
+          <Figure youtube="w-4jfDswUNY" caption="Cannon D - Demonstration of Attack Strategy (Standard)" alt="A video demonstrating the standard attack strategy for Cannon D. The cannon is aimed up and slightly to the right, and then it fires repeatedly to land three hits."/>
         </FigureSet>
         <p>
           If the cannon boarded is <b>Cannon E</b>, then aim between the center of the arena and the far edge 
@@ -53,15 +53,15 @@ export default function Page() {
           shooting until the end of the phase.
         </p>
         <FigureSet>
-          <Figure imgur="cvhzk8X" caption="Cannon E - Attack Strategy (Standard)"/>
-          <Figure youtube="Vr3QxKHZFMQ" caption="Cannon E - Demonstration of Attack Strategy (Standard)"/>
+          <Figure imgur="cvhzk8X" caption="Cannon E - Attack Strategy (Standard)" alt="A diagram depicting the locations of interest in the arena for Cannon E's standard attack strategy. The cannon's drop point, the Sorceress's initial and final positions, and the ideal targets for the cannon shots are marked."/>
+          <Figure youtube="Vr3QxKHZFMQ" caption="Cannon E - Demonstration of Attack Strategy (Standard)" alt="A video demonstrating the standard attack strategy for Cannon E. The cannon is aimed up and begins firing in its initial direction until the first shot connects, and then it is aimed one tick down and continues firing to land two more hits."/>
         </FigureSet>
         <Note>
           When the Sorceress uses her rushing attack, she approximates the center coordinate during her 
           return. Generally, this won't significantly alter her natural fleeing path; but it can, 
           particularly with <b>Cannon E</b>. In these cases, it is sometimes necessary to alter the base aiming
           strategies by adapting to the altered fleeing path.
-          <Figure youtube="BgmP0QIhDrQ" caption="Cannon E - Fleeing Path (Altered)"/>
+          <Figure youtube="BgmP0QIhDrQ" caption="Cannon E - Fleeing Path (Altered)" alt="A video demonstrating the Sorceress's altered pattern of movement when Cannon E is boarded after the Sorceress returns to center from a rushing attack. It is identical to the natural pattern, except that she continues running past her normal stopping point and towards a point very close to the cannon."/>
         </Note>
       </Section>
       <Section title="Adaptation: Rushing Attacks">
@@ -80,8 +80,8 @@ export default function Page() {
           Sorceress forward and continue shooting until the end of the phase.
         </p>
         <FigureSet>
-          <Figure imgur="k8llVJN" caption="Cannon I - Attack Strategy (Rushed)" />
-          <Figure youtube="aLe7tpE7Udk" caption="Cannon I - Demonstration of Attack Strategy (Rushed)" />
+          <Figure imgur="k8llVJN" caption="Cannon I - Attack Strategy (Rushed)" alt="A diagram depicting the locations of interest in the arena for the rushing attack strategy. The cannon's drop point, the Sorceress's initial position, and the ideal targets for the cannon shots are marked."/>
+          <Figure youtube="aLe7tpE7Udk" caption="Cannon I - Demonstration of Attack Strategy (Rushed)" alt="A video demonstrating the generic attack strategy following a rushing attack. Spyro dodges the attack and then boards the cannon as the Sorceress is returning to (but has not yet reached) the center. The cannon is aimed up and to the left, and then it fires repeatedly to land three hits."/>
         </FigureSet>
       </Section>
       <Section title="End of Phase">
@@ -95,7 +95,7 @@ export default function Page() {
           deboarding process of each vehicle. As such, it can be used voluntarily as a recovery for a 
           misexecuted shot. Keep in mind, this is only an appropriate recovery if the shot directly 
           before the deboarding will finish the phase if it connects.
-          <Figure youtube="5gKKwZ4ZPBc" caption="General Vehicle - Attack Strategy (Deboard)"/>
+          <Figure youtube="5gKKwZ4ZPBc" caption="General Vehicle - Attack Strategy (Deboard)" alt="A video demonstrating the deboarding adaptation. The cannon is aimed up as the Sorceress goes through her normal movement pattern; the instant she reaches the center of the screen, a shot is fired and the cannon is disembarked at the same time. This causes the Sorceress to stop in place, which allows the shot to connect."/>
         </Note>
       </Section>
     </Chapter>
