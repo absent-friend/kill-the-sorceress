@@ -8,36 +8,35 @@ import Section from "../../../components/Section";
 export default function Page() {
   return (
     <Chapter title='Appendix: "God Sorc"' previous="epilogue">
-      <Section title="Preface">
-        <p>
-          This information appeared as "Chapter 3" in the original pastebin. God Sorc is 
-          significantly less reliable than the forcing strategy described in 
-          <Link href="chapter3">Chapter 3</Link> of this tutorial, but it can be almost 10 seconds 
-          faster if executed correctly. 
-        </p>
-        <p>
-          This strategy is applicable to the second phase of the fight, when tanks begin to spawn.
-          It requires a second cannon to drop at the start of the phase.
-        </p>
-      </Section>
+      <p>
+        This information appeared as "Chapter 3" in the original pastebin. God Sorc is 
+        significantly less reliable than the forcing strategy described in 
+        <Link href="chapter3">Chapter 3</Link> of this tutorial, but it can be almost 10 seconds 
+        faster if executed correctly. 
+      </p>
+      <p>
+        This strategy is applicable to the second phase of the fight, when tanks begin to spawn.
+        It requires a second cannon to drop at the start of the phase.
+      </p>
       <Section title="Attack Strategy">
         <p>
-          Normally, the Sorceress begins the movement for her fleeing path as soon as she 
-          recognizes a vehicle is being boarded; however, there exists a window of time at the 
-          beginning of her long range attacking animation in which boarding a vehicle causes her to 
-          hesitate for a moment before starting to flee.
+          The attack plan takes advantage of two aspects of the Sorceress's behavior in the second
+          phase:
         </p>
-        <Note>
-          To clarify, the Sorceress will hesitate as described only if the attack chosen is her 
-          blue energy attack. If the attack chosen is her fireball attack, she will continue 
-          through that attack before beginning the normal movement of her fleeing path.
-        </Note>
+        <ol>
+          <li>
+            The hesitation window created when boarding the cannon during the wind-up for a blue 
+            energy attack
+          </li>
+          <li>
+            The natural fleeing path of the Sorceress when the cannon is boarded while she is at
+            the center of the arena
+          </li>
+        </ol>
         <p>
-          After Cannon II is dropped, safely board the vehicle within the window of time described 
-          above. Assuming she is roughly centered in the arena, the first section of her fleeing 
-          path is generally consistent regardless of the cannon boarded.
+          If the long range attack selected is the fireball attack, the Sorceress won't hesitate,
+          so this strategy isn't applicable. Refer back to Chapter 3 in this case.
         </p>
-        <Figure youtube="qNl-abUITTU" caption="Cannon II - Fleeing Path (Natural)" alt="A video demonstrating the Sorceress's natural pattern of movement when any cannon is boarded in the second phase and beyond. After cancelling her long range attack, she moves back and to the right towards the edge of the arena. It is similar to the beginning of Cannon D's movement pattern in the first phase, but she doesn't stop at the same point."/>
         <p>
           If the long range attack selected is the blue energy attack, then aim at the center of 
           the arena and begin shooting. As the first damage is given, gradually lead the Sorceress 
@@ -54,8 +53,8 @@ export default function Page() {
           are in position to be considered for an additional drop.
         </Note>
         <p>
-          If the long range attack selected is the fireball attack, the above attack strategy won't
-          succeed. Instead, refer back to the standard strategies detailed in <Link href="chapter3">Chapter 3</Link>.
+          If you succeed at doing this quickly, Agent 9 may drop another tank at the start of the 
+          next phase. At that point you can follow the tank strategies outlined in Chapter 3.
         </p>
       </Section>
     </Chapter>

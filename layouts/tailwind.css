@@ -36,6 +36,10 @@
   ul {
     @apply list-disc ms-8 my-2;
   }
+
+  li {
+    @apply list-decimal ms-8 my-2;
+  }
 }
 
 @layer utilities {
