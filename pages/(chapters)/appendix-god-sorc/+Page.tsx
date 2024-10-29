@@ -17,8 +17,8 @@ export default function Page() {
       <Section title="Attack Strategy">
         <p>
           This strategy is applicable to the second phase of the fight, when tanks begin to spawn.
-          It requires a second cannon to drop at the start of the phase. The attack plan takes 
-          advantage of two aspects of the Sorceress's behavior in the second phase:
+          It requires an extra cannon to drop at the start of the phase. The attack plan takes 
+          advantage of two aspects of the Sorceress's behavior at this stage:
         </p>
         <ol>
           <li>
@@ -51,9 +51,11 @@ export default function Page() {
           are in position to be considered for an additional drop.
         </Note>
         <p>
-          If you succeed at doing this quickly, Agent 9 may drop another tank at the start of the 
-          next phase. At that point you can follow the tank strategies outlined in 
-          <Link href="/chapter3">Chapter 3</Link>.
+          If you succeed at doing this quickly, Agent 9 may drop a tank at the start of the next 
+          phase; you can use that tank to finish out the fight. Note that he still might not drop a
+          tank, depending on the locations of the tank spawns at the start of the second phase and
+          the speed with which you land the cannon shots. You'll have to fall back on the UFO if
+          the phase ends without a tank drop.
         </p>
       </Section>
     </Chapter>
