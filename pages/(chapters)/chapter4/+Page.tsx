@@ -30,7 +30,7 @@ export default function Page() {
       <ul>
         <li>
           In the case where the first vehicle dropped is Tank II, the strategies used are the same 
-          as the ones described in <Link href="chapter3">Chapter 3</Link>. Refer back to that for 
+          as the ones described in <Link href="/chapter3">Chapter 3</Link>. Refer back to that for 
           details.
         </li>
         <li>

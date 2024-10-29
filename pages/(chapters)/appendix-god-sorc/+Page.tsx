@@ -11,7 +11,7 @@ export default function Page() {
       <p>
         This technique was included in "Chapter 3" of the original Pastebin. God Sorc is 
         significantly less reliable than the forcing strategy described in 
-        <Link href="chapter3">Chapter 3</Link> of this tutorial, but it can be almost 10 seconds 
+        <Link href="/chapter3">Chapter 3</Link> of this tutorial, but it can be almost 10 seconds 
         faster if executed correctly. 
       </p>
       <Section title="Attack Strategy">
@@ -32,7 +32,7 @@ export default function Page() {
         </ol>
         <p>
           If the long range attack selected is the fireball attack, the Sorceress won't hesitate,
-          so this strategy isn't applicable. Refer back to <Link href="chapter3">Chapter 3</Link> in 
+          so this strategy isn't applicable. Refer back to <Link href="/chapter3">Chapter 3</Link> in 
           this case.
         </p>
         <p>
@@ -53,7 +53,7 @@ export default function Page() {
         <p>
           If you succeed at doing this quickly, Agent 9 may drop another tank at the start of the 
           next phase. At that point you can follow the tank strategies outlined in 
-          <Link href="chapter3">Chapter 3</Link>.
+          <Link href="/chapter3">Chapter 3</Link>.
         </p>
       </Section>
     </Chapter>

@@ -37,8 +37,8 @@
     @apply list-disc ms-8 my-2;
   }
 
-  li {
-    @apply list-decimal ms-8 my-2;
+  ol {
+    @apply list-decimal marker:font-semibold ms-8 my-2;
   }
 }
 
