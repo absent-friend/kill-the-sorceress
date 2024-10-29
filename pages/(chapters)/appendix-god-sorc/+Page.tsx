@@ -23,11 +23,11 @@ export default function Page() {
         <ol>
           <li>
             The hesitation window created when boarding the cannon during the wind-up for a blue 
-            energy attack
+            energy attack.
           </li>
           <li>
             The natural fleeing path of the Sorceress when the cannon is boarded while she is at
-            the center of the arena
+            the center of the arena.
           </li>
         </ol>
         <p>
@@ -52,10 +52,9 @@ export default function Page() {
         </Note>
         <p>
           If you succeed at doing this quickly, Agent 9 may drop a tank at the start of the next 
-          phase; you can use that tank to finish out the fight. Note that he still might not drop a
-          tank, depending on the locations of the tank spawns at the start of the second phase and
-          the speed with which you land the cannon shots. You'll have to fall back on the UFO if
-          the phase ends without a tank drop.
+          phase; you can use that to finish out the fight. Note that he still might not drop a
+          tank, depending on their spawn locations and the speed with which you land the cannon 
+          shots. You'll have to fall back on the UFO in that case.
         </p>
       </Section>
     </Chapter>
