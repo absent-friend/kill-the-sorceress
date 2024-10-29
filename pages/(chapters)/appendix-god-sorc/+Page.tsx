@@ -9,19 +9,16 @@ export default function Page() {
   return (
     <Chapter title='Appendix: "God Sorc"' previous="epilogue">
       <p>
-        This information appeared as "Chapter 3" in the original pastebin. God Sorc is 
+        This technique was included in "Chapter 3" of the original Pastebin. God Sorc is 
         significantly less reliable than the forcing strategy described in 
         <Link href="chapter3">Chapter 3</Link> of this tutorial, but it can be almost 10 seconds 
         faster if executed correctly. 
       </p>
-      <p>
-        This strategy is applicable to the second phase of the fight, when tanks begin to spawn.
-        It requires a second cannon to drop at the start of the phase.
-      </p>
       <Section title="Attack Strategy">
         <p>
-          The attack plan takes advantage of two aspects of the Sorceress's behavior in the second
-          phase:
+          This strategy is applicable to the second phase of the fight, when tanks begin to spawn.
+          It requires a second cannon to drop at the start of the phase. The attack plan takes 
+          advantage of two aspects of the Sorceress's behavior in the second phase:
         </p>
         <ol>
           <li>
@@ -35,7 +32,8 @@ export default function Page() {
         </ol>
         <p>
           If the long range attack selected is the fireball attack, the Sorceress won't hesitate,
-          so this strategy isn't applicable. Refer back to Chapter 3 in this case.
+          so this strategy isn't applicable. Refer back to <Link href="chapter3">Chapter 3</Link> in 
+          this case.
         </p>
         <p>
           If the long range attack selected is the blue energy attack, then aim at the center of 
@@ -54,7 +52,8 @@ export default function Page() {
         </Note>
         <p>
           If you succeed at doing this quickly, Agent 9 may drop another tank at the start of the 
-          next phase. At that point you can follow the tank strategies outlined in Chapter 3.
+          next phase. At that point you can follow the tank strategies outlined in 
+          <Link href="chapter3">Chapter 3</Link>.
         </p>
       </Section>
     </Chapter>
