@@ -122,7 +122,7 @@ export function CannonTable(props: CannonTableProps) {
       <thead class="text-blue-950 dark:text-blue-100 text-lg">
         {headerRow(props.head)}
       </thead>
-      <tbody class="text-blue-950 dark:text-blue-100 text-lg">
+      <tbody class="text-lg">
         {props.children}
       </tbody>
     </table>

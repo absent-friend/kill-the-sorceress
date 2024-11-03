@@ -40,6 +40,10 @@
   ol {
     @apply list-decimal marker:font-semibold ms-8 my-2;
   }
+
+  a {
+    @apply font-semibold underline;
+  }
 }
 
 @layer utilities {

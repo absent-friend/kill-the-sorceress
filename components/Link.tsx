@@ -15,5 +15,5 @@ function normalize(url: string) {
 export default function Link(props: LinkProps) {
   const href = normalize(import.meta.env.BASE_URL + props.href);
   const extraClasses = Object.fromEntries((props.class || '').split(' ').map(clazz => [clazz, true]));
-  return <a href={href} classList={{ 'font-semibold': true, 'invisible': props.invisible, 'underline': !props.noUnderline, ...extraClasses }}>{props.children}</a>;
+  return <a href={href} classList={{ 'invisible': props.invisible, 'no-underline': props.noUnderline, ...extraClasses }}>{props.children}</a>;
 }

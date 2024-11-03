@@ -19,12 +19,12 @@ export default function Legend() {
     ].join(' ')}>
       <caption class="font-bold text-center text-sm">Legend for arena diagrams.</caption>
       <thead>
-        <tr class="bg-emerald-200 dark:bg-emerald-600 text-emerald-950 dark:text-white text-left text-lg">
+        <tr class="bg-emerald-200 dark:bg-emerald-600 text-emerald-950 dark:text-slate-50 text-left text-lg">
           <th class="border-r border-b ps-2 border-emerald-300 dark:border-emerald-500">Symbol</th>
           <th class="border-l border-b ps-2 border-emerald-300 dark:border-emerald-500">Meaning</th>
         </tr>
       </thead>
-      <tbody class="text-emerald-950 dark:text-white text-lg">
+      <tbody class="text-lg">
         <tr>
           <td class="border-r border-t ps-2 border-emerald-300 dark:border-emerald-500 font-['Roboto_Slab'] text-[#00fcff] text-4xl text-outline">S</td>
           <td class="border-l border-t ps-2 border-emerald-300 dark:border-emerald-500">Sorceress - initial position</td>
