@@ -15,13 +15,14 @@ function nextLevel(level: SectionLevel): SectionLevel {
 const SectionContext = createContext<SectionLevel>(SectionLevel.FIRST);
 
 interface SectionProps extends ParentProps {
-  title: string
+  title: string,
+  class?: string
 }
 
 export default function Section(props: SectionProps) {
   const currentLevel = useContext(SectionContext);
   return (
-    <section>
+    <section class={props.class}>
       <Switch>
         <Match when={currentLevel === SectionLevel.FIRST}>
           {/* Starts with <h2> because <h1> is the chapter title. There should be only one <h1> in the document. */}

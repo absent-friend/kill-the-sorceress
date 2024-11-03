@@ -20,7 +20,7 @@ export default function Page() {
         <Figure youtube="ZG4C0uzFLIg" caption="Spooky scary skeletons." alt={`Disney cartoon - "The Skeleton Dance" in its entirety.`}/>
       </FigureSet>
       <p>
-        The images will be marked-up versions of the top-down arena view that you saw above.
+        The images will be marked-up versions of the top-down arena view that you see above.
         Provided here is a legend for the symbols that appear in these diagrams; you might want
         to leave this page open in a separate tab so you can continue to refer to this table
         as you proceed through the tutorial.
