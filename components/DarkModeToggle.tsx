@@ -8,7 +8,11 @@ export function DarkModeInit() {
   document.documentElement.classList.toggle("dark", theme === "dark");
   `;
   return (
-    <script lang="js" textContent={script}></script>
+    <>
+      <script lang="js" textContent={script}></script>
+      <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F1F5F9" />
+      <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#020617" />
+    </>
   );
 }
 
